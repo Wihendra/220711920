@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Formulir Pendaftaran Seminar</title>
+</head>
+<body>
+
+    <h1>Formulir Pendaftaran Seminar</h1>
+    
+    <form action="" method="post" enctype="multipart/form-data">
+        
+        <!-- IV. Pada tabel Data Peserta, buat isian: -->
+        <h3>Data Peserta</h3>
+        <table cellspacing="4" cellpadding="4" border="1" style="border-collapse:collapse; width:100%;">
+            <tr>
+                <td style="width:32%;">
+                    <strong>Nama Lengkap</strong>
+                </td>
+                <td>
+                    <!-- Nama Lengkap menggunakan <input type="text"> -->
+                    <input type="text" id="nama" name="nama" style="width:99%;" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width:32%;">
+                    <strong>NIM</strong>
+                </td>
+                <td>
+                    <!-- NIM menggunakan <input type="text"> -->
+                    <input type="text" id="nim" name="nim" style="width:99%;" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width:32%;">
+                    <strong>Jenis Kelamin</strong>
+                </td>
+                <td>
+                    <!-- Jenis Kelamin menggunakan <input type="radio"> -->
+                    <input type="radio" id="laki" name="jk" value="Laki-laki" /><label for="laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="jk" value="Perempuan" /><label for="perempuan">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:32%;">
+                    <strong>Program Studi</strong>
+                </td>
+                <td>
+                    <!-- Program Studi menggunakan <select> dan <option> -->
+                    <select id="prodi" name="prodi">
+                        <option value="Informatika">Informatika</option>
+                        <option value="Sistem Informasi">Sistem Informasi</option>
+                        <option value="Teknik Industri">Teknik Industri</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        
+        <br />
+
+        <!-- V. Buat tabel Pilihan Seminar yang berisi: -->
+        <h3>Pilihan Seminar</h3>
+        <table cellspacing="4" cellpadding="4" border="1" style="border-collapse:collapse; width:100%;">
+            <tr>
+                <td style="width:32%;">
+                    <strong>Jenis Tiket</strong>
+                </td>
+                <td>
+                    <!-- Jenis Tiket menggunakan <input type="radio"> dengan pilihan Reguler dan VIP -->
+                    <input type="radio" id="reguler" name="tiket" value="Reguler" /><label for="reguler">Reguler</label>
+                    <input type="radio" id="vip" name="tiket" value="VIP" /><label for="vip">VIP</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:32%; vertical-align: top;">
+                    <strong>Topik Seminar</strong>
+                </td>
+                <td>
+                    <!-- Topik Seminar menggunakan <input type="checkbox"> dengan pilihan: Web Development, Data Science dan Artificial Intelligence -->
+                    <input type="checkbox" id="topik1" name="topik" value="Web Development" /><label for="topik1">Web Development</label><br />
+                    <input type="checkbox" id="topik2" name="topik" value="Data Science" /><label for="topik2">Data Science</label><br />
+                    <input type="checkbox" id="topik3" name="topik" value="Artificial Intelligence" /><label for="topik3">Artificial Intelligence</label>
+                </td>
+            </tr>
+        </table>
+        
+        <br />
+
+        <!-- VI. Buat tabel Informasi Tambahan yang berisi: -->
+        <h3>Informasi Tambahan</h3>
+        <table cellspacing="4" cellpadding="4" border="1" style="border-collapse:collapse; width:100%;">
+            <tr>
+                <td style="width:32%; vertical-align: top;">
+                    <strong>Alasan Mengikuti Seminar</strong>
+                </td>
+                <td>
+                    <!-- Alasan Mengikuti Seminar menggunakan <textarea> -->
+                    <textarea id="alasan" name="alasan" rows="5" style="width:40%;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:32%;">
+                    <strong>Bukti Pembayaran</strong>
+                </td>
+                <td>
+                    <!-- Bukti Pembayaran menggunakan <input type="file"> -->
+                    <input type="file" id="bukti" name="bukti" />
+                </td>
+            </tr>
+            
+            <!-- VII. Pada bagian akhir tabel, buat tombol Simpan menggunakan: <input type="submit"> -->
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" name="simpan" value="Simpan" />
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+</body>
+</html>
