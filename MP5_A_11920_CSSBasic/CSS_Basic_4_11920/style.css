@@ -1,0 +1,36 @@
+/* c. LINKED STYLE SHEET */
+
+/* Selector 1: Mengatur background dasar halaman */
+body {
+    background-color: #f7f6ef;
+    font-family: Cambria, Georgia, serif;
+    margin: 0;
+}
+
+/* Selector 2: Mengatur estetika teks judul utama */
+h1 {
+    font-size: 32px;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px #cccccc;
+}
+
+/* Selector 3: Mengatur tata letak paragraf deskripsi */
+p {
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    margin-top: 10px;
+}
+
+/* Selector 4: Mengatur transisi animasi pada link */
+a {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Selector 5: Memberikan efek interaktif saat gambar logo disorot mouse */
+a:hover {
+    transform: scale(1.05);
+    filter: brightness(1.05);
+    opacity: 0.95;
+}
