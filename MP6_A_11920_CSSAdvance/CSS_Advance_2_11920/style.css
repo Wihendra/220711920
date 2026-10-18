@@ -1,0 +1,193 @@
+/* --- Pengaturan Global / Reset Dasar --- */
+body {
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    background-color: #f3f4f6; /* Warna abu-abu soft netral */
+    color: #1f2937;
+    margin: 0;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* --- Container Utama Formulir --- */
+.container-form {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Header Form --- */
+h1 {
+    color: #1e3a8a; /* Warna biru gelap formal */
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+.deskripsi-form {
+    font-size: 14px;
+    color: #6b7280;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+/* --- Pengelompokan Bagian Form --- */
+.grup-bagian {
+    margin-bottom: 30px;
+}
+
+.grup-bagian h3 {
+    font-size: 16px;
+    color: #2563eb; /* Warna biru aksen cerah */
+    border-bottom: 2px solid #eff6ff;
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+}
+
+/* --- Transformasi Tabel HTML Bawaan --- */
+.tabel-custom {
+    width: 100%;
+    border-collapse: collapse !important;
+    border: none !important; /* Menghilangkan border garis tebal bawaan */
+}
+
+.tabel-custom tr {
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.tabel-custom tr:last-child {
+    border-bottom: none;
+}
+
+/* --- Tata Letak Kolom Kiri & Kanan --- */
+.kolom-label {
+    width: 32%;
+    padding: 14px 10px 14px 0;
+    font-weight: 600;
+    color: #374151;
+    font-size: 14px;
+}
+
+.kolom-input {
+    width: 68%;
+    padding: 14px 0;
+}
+
+/* Memaksa elemen label sejajar di atas untuk tipe kolom teks panjang */
+.label-atas {
+    vertical-align: top;
+    padding-top: 18px;
+}
+
+/* --- Komponen Elemen Isian Input --- */
+.kolom-input input[type="text"],
+.kolom-input select,
+.kolom-input textarea {
+    width: 100% !important; /* Menggantikan inline styles width: 99% sebelumnya */
+    padding: 10px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background-color: #f9fafb;
+    font-size: 14px;
+    box-sizing: border-box; /* Mengunci komponen agar tidak luber keluar pembatas kartu */
+    transition: all 0.3s ease;
+}
+
+/* Transisi Efek Fokus Saat Form Diklik */
+.kolom-input input[type="text"]:focus,
+.kolom-input select:focus,
+.kolom-input textarea:focus {
+    border-color: #2563eb;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+    outline: none;
+}
+
+.kolom-input textarea {
+    resize: vertical; /* Membatasi pelebaran teks agar hanya bisa ditarik ke bawah */
+    font-family: inherit;
+}
+
+/* --- Opsi Komponen Pilihan (Radio & Checkbox) --- */
+.opsi-inline {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+}
+
+.label-opsi {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.pilihan-blok {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.pilihan-blok:last-child {
+    margin-bottom: 0;
+}
+
+.pilihan-blok input[type="checkbox"],
+.opsi-inline input[type="radio"] {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+.pilihan-blok label {
+    cursor: pointer;
+}
+
+/* Pengaturan Input Komponen File Upload */
+.kolom-input input[type="file"] {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.catatan-file {
+    font-size: 11px;
+    color: #9ca3af;
+    display: block;
+}
+
+/* --- Area Penempatan Tombol Pengiriman --- */
+.baris-tombol {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.btn-kirim {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    border: none;
+    padding: 12px 35px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(30, 58, 138, 0.15);
+    transition: all 0.2s ease;
+}
+
+.btn-kirim:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(29, 78, 216, 0.25);
+}
+
+.btn-kirim:active {
+    transform: translateY(1px);
+}

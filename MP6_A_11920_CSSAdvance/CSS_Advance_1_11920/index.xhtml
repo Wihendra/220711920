@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Pendaftaran Mahasiswa Baru</title>
+    <!-- Menghubungkan ke file CSS external -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+    <div class="form-wrapper">
+        <h1>Formulir Registrasi Data Mahasiswa</h1>
+        <p class="form-subtitle">Silakan isi data diri Anda dengan lengkap dan benar.</p>
+        
+        <form action="" method="post" enctype="multipart/form-data">
+            <table class="modern-table">
+                
+                <!-- Input nama -->
+                <tr>
+                    <td class="label-cell">
+                        <label for="namamhs">Nama Lengkap</label>
+                    </td>
+                    <td class="input-cell">
+                        <input type="text" id="namamhs" name="namamhs" placeholder="Masukkan nama sesuai ijazah" />
+                    </td>
+                </tr>
+                
+                <!-- Pilihan jenis kelamin -->
+                <tr>
+                    <td class="label-cell">
+                        <label>Gender</label>
+                    </td>
+                    <td class="input-cell radio-group">
+                        <input type="radio" id="laki" name="jk" value="Laki-Laki" />
+                        <label for="laki" class="radio-label">Pria</label>
+                        
+                        <input type="radio" id="perempuan" name="jk" value="Perempuan" />
+                        <label for="perempuan" class="radio-label">Wanita</label>
+                    </td>
+                </tr>
+                
+                <!-- Pilihan prodi -->
+                <tr>
+                    <td class="label-cell">
+                        <label for="prodi">Pilihan Program Studi</label>
+                    </td>
+                    <td class="input-cell">
+                        <select id="prodi" name="prodi">
+                            <option disabled="disabled" selected="selected">-- Pilih Jurusan --</option>
+                            <option>Informatika</option>
+                            <option>Sistem Informasi</option>
+                            <option>Teknik Industri</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <!-- Input email -->
+                <tr>
+                    <td class="label-cell">
+                        <label for="email">Surel / Email Aktif</label>
+                    </td>
+                    <td class="input-cell">
+                        <input type="text" id="email" name="email" placeholder="contoh@kampus.ac.id" />
+                    </td>
+                </tr>
+                
+                <!-- Input telepon -->
+                <tr>
+                    <td class="label-cell">
+                        <label for="telepon">No. Handphone / WhatsApp</label>
+                    </td>
+                    <td class="input-cell">
+                        <input type="text" id="telepon" name="telepon" placeholder="Contoh: 08123456789" />
+                    </td>
+                </tr>
+                
+                <!-- Input password -->
+                <tr>
+                    <td class="label-cell">
+                        <label for="password">Kata Sandi Akun</label>
+                    </td>
+                    <td class="input-cell">
+                        <input type="password" id="password" name="password" placeholder="Buat password minimal 8 karakter" />
+                    </td>
+                </tr>
+                
+                <!-- Input file foto -->
+                <tr>
+                    <td class="label-cell">
+                        <label for="photo">Unggah Pasfoto Resmi</label>
+                    </td>
+                    <td class="input-cell">
+                        <input type="file" id="photo" name="photo" accept="image/gif, image/jpeg, image/png" />
+                        <span class="file-hint">Format: JPG, JPEG, PNG (Maks. 2MB)</span>
+                    </td>
+                </tr>
+                
+                <!-- Input sekolah asal -->
+                <tr>
+                    <td class="label-cell">
+                        <label for="namasmu">Asal Sekolah Menengah (SMA/K)</label>
+                    </td>
+                    <td class="input-cell">
+                        <input type="text" id="namasmu" name="namasmu" placeholder="Masukkan nama sekolah asal" />
+                    </td>
+                </tr>
+                
+                <!-- Pilihan hobi/minat -->
+                <tr>
+                    <td class="label-cell target-top">
+                        <label>Minat &amp; Kegemaran</label>
+                    </td>
+                    <td class="input-cell checkbox-section">
+                        <div class="checkbox-group">
+                            <strong>Genre Musik Favorit:</strong><br />
+                            <input type="checkbox" id="musik1" name="musik" value="Pop" /> <label for="musik1">Pop</label>
+                            <input type="checkbox" id="musik2" name="musik" value="Rock" /> <label for="musik2">Rock</label>
+                            <input type="checkbox" id="musik3" name="musik" value="Jazz" /> <label for="musik3">Jazz</label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <strong>Kategori Film Terpilih:</strong><br />
+                            <input type="checkbox" id="film1" name="film" value="Drama" /> <label for="film1">Drama</label>
+                            <input type="checkbox" id="film2" name="film" value="Action" /> <label for="film2">Action</label>
+                            <input type="checkbox" id="film3" name="film" value="Sci-Fi" /> <label for="film3">Sci-Fi</label>
+                        </div>
+                    </td>
+                </tr>
+                
+                <!-- Kolom resume -->
+                <tr>
+                    <td class="label-cell target-top">
+                        <label for="resume">Deskripsi Singkat / Ringkasan Diri</label>
+                    </td>
+                    <td class="input-cell">
+                        <textarea id="resume" name="resume" rows="6" cols="50" placeholder="Tuliskan cerita singkat tentang pencapaian atau latar belakang Anda..."></textarea>
+                    </td>
+                </tr>
+                
+                <!-- Tombol simpan -->
+                <tr>
+                    <td colspan="2" class="button-cell">
+                        <input type="submit" name="simpan" value="Kirim Pendaftaran" class="btn-submit" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Formulir Registrasi Simposium &amp; Seminar</title>
+    <!-- Menghubungkan berkas CSS eksternal -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+    <div class="container-form">
+        <h1>Formulir Pendaftaran Seminar </h1>
+        <p class="deskripsi-form">Silakan isi seluruh kolom di bawah ini untuk mengamankan slot kursi Anda.</p>
+        
+        <form action="" method="post" enctype="multipart/form-data">
+            
+            <!-- IV. Data Identitas Diri -->
+            <div class="grup-bagian">
+                <h3>I. Profil Peserta</h3>
+                <table class="tabel-custom">
+                    <tr>
+                        <td class="kolom-label">
+                            <label for="nama">Nama Lengkap</label>
+                        </td>
+                        <td class="kolom-input">
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap beserta gelar (jika ada)" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="kolom-label">
+                            <label for="nim">Nomor Induk Mahasiswa (NIM)</label>
+                        </td>
+                        <td class="kolom-input">
+                            <input type="text" id="nim" name="nim" placeholder="Contoh: 20210801001" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="kolom-label">
+                            <label>Gender</label>
+                        </td>
+                        <td class="kolom-input opsi-inline">
+                            <input type="radio" id="laki" name="jk" value="Laki-laki" />
+                            <label for="laki" class="label-opsi">Pria</label>
+                            
+                            <input type="radio" id="perempuan" name="jk" value="Perempuan" />
+                            <label for="perempuan" class="label-opsi">Wanita</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="kolom-label">
+                            <label for="prodi">Program Studi</label>
+                        </td>
+                        <td class="kolom-input">
+                            <select id="prodi" name="prodi">
+                                <option disabled="disabled" selected="selected">-- Pilih Jurusan Anda --</option>
+                                <option value="Informatika">Informatika</option>
+                                <option value="Sistem Informasi">Sistem Informasi</option>
+                                <option value="Teknik Industri">Teknik Industri</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- V. Kategori & Topik Acara -->
+            <div class="grup-bagian">
+                <h3>II. Preferensi Tiket &amp; Acara</h3>
+                <table class="tabel-custom">
+                    <tr>
+                        <td class="kolom-label">
+                            <label>Kategori Tiket</label>
+                        </td>
+                        <td class="kolom-input opsi-inline">
+                            <input type="radio" id="reguler" name="tiket" value="Reguler" />
+                            <label for="reguler" class="label-opsi">Kelas Reguler</label>
+                            
+                            <input type="radio" id="vip" name="tiket" value="VIP" />
+                            <label for="vip" class="label-opsi">Kelas VIP</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="kolom-label label-atas">
+                            <label>Fokus Topik Seminar</label>
+                        </td>
+                        <td class="kolom-input">
+                            <div class="pilihan-blok">
+                                <input type="checkbox" id="topik1" name="topik" value="Web Development" />
+                                <label for="topik1">Web Development (Pengembangan Web)</label>
+                            </div>
+                            <div class="pilihan-blok">
+                                <input type="checkbox" id="topik2" name="topik" value="Data Science" />
+                                <label for="topik2">Data Science (Sains Data)</label>
+                            </div>
+                            <div class="pilihan-blok">
+                                <input type="checkbox" id="topik3" name="topik" value="Artificial Intelligence" />
+                                <label for="topik3">Artificial Intelligence (Kecerdasan Buatan)</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- VI. Berkas & Keterangan Pendukung -->
+            <div class="grup-bagian">
+                <h3>III. Informasi Tambahan</h3>
+                <table class="tabel-custom">
+                    <tr>
+                        <td class="kolom-label label-atas">
+                            <label for="alasan">Motivasi Mengikuti Kegiatan</label>
+                        </td>
+                        <td class="kolom-input">
+                            <textarea id="alasan" name="alasan" rows="5" placeholder="Ceritakan secara singkat alasan atau ekspektasi Anda mengikuti seminar ini..."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="kolom-label">
+                            <label for="bukti">Unggah Dokumen Pembayaran</label>
+                        </td>
+                        <td class="kolom-input">
+                            <input type="file" id="bukti" name="bukti" />
+                            <span class="catatan-file">Format yang didukung: JPG, PNG, atau PDF (Maks. 2MB)</span>
+                        </td>
+                    </tr>
+                    
+                    <!-- VII. Tombol Pengiriman -->
+                    <tr>
+                        <td colspan="2" class="baris-tombol">
+                            <input type="submit" name="simpan" value="Kirim Formulir Pendaftaran" class="btn-kirim" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
